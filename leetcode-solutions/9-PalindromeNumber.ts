@@ -30,7 +30,6 @@ Follow up: Could you solve it without converting the integer to a string?
 */
 
 function isPalindrome(x: number): boolean {
-    const numberString = x.toString();
-    const reversedNumberString = numberString.split('').reverse().join('');
-    return numberString === reversedNumberString;
-};
+  const reversedString = x.toString().split("").reverse().join('');
+  return x.toString() === reversedString;
+}
