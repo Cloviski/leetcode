@@ -33,5 +33,20 @@ words[i] consists only of lowercase English letters.
 */
 
 function findWordsContaining(words: string[], x: string): number[] {
-    return []
-};
+  const indices: number[] = [];
+
+  for (let i: number = 0; i < words.length; i++) {
+    for (let j = 0; j < words[i].length; j++) {
+      if (words[i][j].includes(x)) {
+        indices.push(i);
+        break;
+      }
+    }
+  }
+
+  return indices;
+}
+
+//.keys()
+//.includes()
+//.indexOf()
