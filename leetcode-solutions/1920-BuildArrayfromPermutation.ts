@@ -40,5 +40,10 @@ function buildArray(nums: number[]): number[] {
     result.push(nums[nums[i]]);
   }
 
-  return result;
+  return result; 
 }
+
+//or
+
+const buildedArray = (nums: number[]): number[] =>
+  nums.map((number, index) => nums[nums[index]]);
