@@ -27,7 +27,7 @@ nums.length == 2n
 1 <= nums[i] <= 10^3
 */
 
-function shuffle(nums: number[], n: number): number[] {
+const shuffle = (nums: number[], n: number): number[] => {
   const result: number[] = [];
 
   for (let i = 0; i < n; i++) {
@@ -35,6 +35,6 @@ function shuffle(nums: number[], n: number): number[] {
   }
 
   return result;
-}
+};
 
 //
